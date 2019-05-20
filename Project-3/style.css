@@ -1,0 +1,309 @@
+/* Final Project - Working Prototype */
+/* mobile */
+*{
+    box-sizing: border-box;
+}
+@media screen and (max-width: 750px){
+    body{
+        background-color:darkred;
+        font-family: sans-serif;
+        color:black;
+    }
+    main{
+    }
+    header{
+        height: 8em;
+        background-color: pink;
+        color: darkred;
+        padding: 1em;
+    }
+    nav{
+        height: auto;
+        background-color: darkblue;
+    }
+    nav ul{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        }
+nav li a {
+        display: block;
+        text-align: center;
+        padding: .75em;
+        border: 1px solid #fff;
+        font-size: 1.3em;
+        font-weight: 800;
+        color:black;
+        text-decoration: none;
+    }
+nav li a:hover{
+        background-color: blue;
+        color: yellow;       
+    }
+section{
+        padding: 1em;
+    }
+section aside{
+        min-height: 10em;
+    }
+section article{
+        min-height: 10em;
+    }
+footer{
+        padding: 1em;
+        background-color: pink;
+    }
+label {
+        display:block;
+        float: left;
+        width: 6em;
+        text-align: right;
+    }
+.audiotext {
+        width: 10em;
+        vertical-align: middle;
+    }
+.myaudioplayer{
+        vertical-align: middle;
+        margin-left: 2em;
+        }
+.myvideo {
+        width 100%;
+        min-height: 250px;
+    }
+.photoRow{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+        }
+.photoColumn{
+        flex: 25%;
+        max-width: 25%;      
+}
+.photoColumn img{
+        width: 100%;
+        padding: 2px 4px;     
+    }
+}
+/* desktop */
+*{
+    box-sizing: border-box;
+}
+@media screen and (min-width: 751px){
+body{
+        background-color:purple;
+        font-family: serif;
+        color:black;
+    }
+main{
+        background-color: fuchsia;
+        color: darkred;
+        width: 80%;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 2em 2em 2em;
+    }
+header{
+        height: 8em;
+        background-color: pink;
+        color: darkred;
+        padding: 1em;
+}
+nav{
+        background-color: darkred;
+        height: 4em;
+        overflow: hidden;
+            }
+nav ul {
+        list-style-type: none;
+        margin: 0 35%;
+        padding: 0;
+  }
+nav ul li{
+        float: left;
+        overflow: hidden;
+        }
+nav ul a{
+        display: block;
+        color: black;
+        padding: .3em;
+        text-decoration: none;
+    }
+nav ul a:hover{
+        background-color: black;
+        color: aquamarine;
+    }
+section{
+        clear: both;
+        min-height: 15em;
+        height: auto;
+        overflow: hidden;
+    }
+section aside{
+        width: 20%;
+        float: left;
+    }
+section article{
+        width: 60%;
+        float: left;
+        overflow: hidden;
+    }
+footer{
+       clear: left;
+    }
+nav{
+    background-color:bisque;
+    }
+.label{
+        display:block;
+        float: left;
+        width: 6em;
+        text-align: right;
+    }
+.audiotext {
+        width: 10em;
+        vertical-align: middle;
+    }
+.myaudioplayer{
+        vertical-align: middle;
+        margin-left: 2em;
+    }
+.myvideo{
+        width 50%;
+        min-height: 100px;
+    }
+.photoRow{
+        display: flex;
+        flex-wrap: wrap;
+        background-color: black;
+    }
+    
+.photoColumn{
+        flex: 25%;
+        max-width: 25%;      
+      }
+.photoColumn img{
+        width: 100%;
+        padding: 2px 4px;        
+    }
+    }
+    /*body{
+    background-image:url(images/background.jpeg);
+    background-size:cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    }
+main{
+    width: 80%;
+    height: auto;
+    background-color: darkgray;
+    margin: 0 auto;
+}
+header{
+    padding: 2em;
+    height: 3em;
+    background-color: pink;
+    color:#600000;
+    text-align: center;    
+    }
+nav{
+    height: 3em;
+    padding: .5em 2em;
+    background-color: aqua;
+    position:fixed;
+    top; 10px;
+    width: 77%;
+}
+/*#Main_Menu ul li {
+    display: inline; 
+}
+#Main_Menu ul li a {
+    display:inline-block;
+    width: 10%;
+    height: 2em;
+    text-decoration: none;
+    background-color: coral;
+    padding: 1em;
+    color: darkblue;
+}
+#Main_Menu ul li a.lastitem{
+    border-right: none;
+}
+#Main_Menu ul li a.hover{
+    color: yellow;
+    background-color: azure;
+}*/
+/*#Main_Menu ul {
+    list-style: none;
+    text-align: center;
+    position:relative;
+    margin: 0px;
+    }
+#Main_Menu ul li {
+    float: left;
+    padding: .5em;
+    color: darkblue;
+    background-color: burlywood;
+    width: 6em;
+}
+#Main_Menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+}
+#Main_Menu ul ul li {
+    float: none;
+}
+#Main_Menu ul li:hover > ul {
+    display: block;
+    background-color: aquamarine;
+}
+#Main_Menu > ul::after {
+    content:"";
+    display:block;
+    clear:both;
+}
+#Main_Menu a:link, #Main_Menu a:visited {
+    color: white;
+    text-decoration: none;
+}
+section{
+    height: auto;
+    overflow: hidden;
+    padding: 2em;
+}
+sectionh2{
+    text-align: center;
+    }
+aside{
+    height: auto;
+    width: 20%;
+    float: left;
+    border-radius: 10%;
+    border: 2px dashed white;
+    padding: 2%;
+    margin: 2%;
+    }
+articleh4{
+    text-align: center;
+}
+article{
+    height: auto;
+    width: 70%;
+    float: right;
+    column-count: 3;
+    column-rule: 1px solid #ffffff; 
+    }
+footer{
+    height: 3em;
+    clear: both;
+    padding: 2em;
+    background-color:aqua;
+    }
+.smedia{
+    position:absolute;
+    left: 0px;
+    top: 200px;
+    width: 2em;
+}*/
